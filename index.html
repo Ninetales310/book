@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+    <title>Interactive Book Homepage</title>
+    <style>
+        :root {
+            --primary-color: #edd9cc;
+            --secondary-color: #b8a597;
+            --background-color: #806350;
+            --text-color: #2c3e50;
+            --logo-color: #ffd300;
+            --pie-chartcolor: #0041c2;
+            --bar-color: #b20808;
+        }
+        h1{text-align: center;
+            color: var(--logo-color);
+            font-size: 2em;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            background: linear-gradient(to right, #022108, #b2b51b)
+        }
+        nav {
+            background: linear-gradient(to right, #022108, #b2b51b);
+      padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: linear-gradient(to right, #022108, #b2b51b);
+        }
+        .book {
+            font-family: "Cedarville Cursive", cursive;
+            width: 456px;
+            height: 650px;
+            background-color: #332000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .book:hover {
+            font-family: "Cedarville Cursive", cursive;
+            transform: scale(1.30);
+        }
+        .book-content {
+            font-family: "Cedarville Cursive", cursive;
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px;
+            color: gold;
+        }
+        .book-top, .book-bottom {
+            font-size: 40px;
+            border-bottom: 2px solid gold;
+            padding: 8px 0;
+        }
+        .book-title {
+            font-size: 55px;
+            font-family: "Cedarville Cursive", cursive;
+            font-weight: bold;
+            text-align: center;
+        }
+        .book-author {
+            font-family: "Cedarville Cursive", cursive;
+            text-align: center;
+            font-size: 30px;
+        }
+        .book-emblem {
+            font-size: 180px;
+            font-family: "Cedarville Cursive", cursive;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: gold;
+            color: #8B0000;
+            width: 235px;
+            height: 235px;
+            border-radius: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="infographics.html">Infographic</a>
+        <a href="aids.html">Aids</a>
+        <a href="RA 8504.html">RA 8504</a>
+        <a href="FLIP CARD.html">Members</a>
+    </nav>
+    <center><h1>Buksan ang aklat para makita ang infographics</h1></center>
+    <div class="container">
+        <a href="infographics.html" class="book">
+            <div class="book-content">
+                <div class="book-top">The Book of Aids</div>
+                <div class="book-title"></div>
+                <div class="book-bottom">
+                    <div class="book-author">Group 3</div>
+                </div>
+            </div>
+            <div class="book-emblem"><b><i>3</b></i></div>
+
+        </a>
+    </div>
+</body>
+</html>
